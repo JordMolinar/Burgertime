@@ -18,6 +18,7 @@ var exphbs = require("express-handlebars");
 
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set('views', './public/assets/views')
 app.set("view engine", "handlebars");
 
 // Grabs the routes created in designated file 
